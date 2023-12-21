@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de points - Paramètres</title>
+    <link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../styles/background.css">
+    <link rel="stylesheet" href="../styles/param-style.css">
+</head>
+
+<body>
+    <div id="losange-container"></div>
+    <h1>Parametres  du  Jeu</h1>
+
+    <div id="settings-container">
+        <div class="settings-section" id="player1-section">
+            <h2 class="text">Joueur 1</h2>
+            <label for="player1-name" class="text">Nom :</label>
+            <input type="text" id="player1-name" name="player1-name"><br>
+
+            <label for="player1-color" class="text">Couleur :</label>
+            <select id="player1-color" name="player1-color">
+            </select>
+        </div>
+
+        <div class="settings-section" id="time">
+            <h2>Temps</h2>
+            <label for="reflection-time">Temps de Réflexion :</label>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="reflection-10" name="reflection-time" value="10">
+                    <label for="reflection-10">10 sec</label>
+                </div>
+                <div>
+                    <input type="radio" id="reflection-20" name="reflection-time" value="20" checked="checked">
+                    <label for="reflection-20">20 sec</label>
+                </div>
+                <div>
+                    <input type="radio" id="reflection-30" name="reflection-time" value="30">
+                    <label for="reflection-30">30 sec</label>
+                </div>
+                <div>
+                    <input type="radio" id="reflection-none" name="reflection-time" value="0">
+                    <label for="reflection-none">&empty;</label>
+                </div>
+            </div>
+        
+            <label for="game-time">Durée du Jeu :</label>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="game-3" name="game-time" value="3">
+                    <label for="game-3">3 min</label>
+                </div>
+                <div>
+                    <input type="radio" id="game-5" name="game-time" value="5" checked="checked">
+                    <label for="game-5">5 min</label>
+                </div>
+                <div>
+                    <input type="radio" id="game-10" name="game-time" value="10">
+                    <label for="game-10">10 min</label>
+                </div>
+                <div>
+                    <input type="radio" id="game-infinite" name="game-time" value="99">
+                    <label for="game-infinite">&infin;</label>
+                </div>
+            </div>
+        </div>
+        <div class="settings-section" id="size">
+            <h2>Taille du cahier</h2>
+            <div class="radio-group2">
+                <div>
+                    <input type="radio" id="size-10" name="notebook-size" value="1">
+                    <label for="size-10">Petit carré</label>
+                </div>
+                <div>
+                    <input type="radio" id="size-20" name="notebook-size" value="2" checked="checked">
+                    <label for="size-20">Cahier PM</label>
+                </div>
+                <div>
+                    <input type="radio" id="size-none" name="notebook-size" value="4">
+                    <label for="size-none">Cahier GM</label>
+                </div>
+                <div>
+                    <input type="radio" id="size-30" name="notebook-size" value="3">
+                    <label for="size-30">Grand carré</label>
+                </div>
+            </div>
+        </div>        
+
+        <div class="settings-section" id="player2-section">
+            <h2 class="text">Joueur 2</h2>
+            <label for="player2-name" class="text">Nom :</label>
+            <input type="text" id="player2-name" name="player2-name"><br>
+
+            <label for="player2-color" class="text">Couleur :</label>
+            <select id="player2-color" name="player2-color">
+            </select>
+        </div>
+    </div>
+
+    <button id="start-game">Jouer</button>
+    <p id="substitute">(Choisir 2 couleurs différentes pour commencer)</p>
+    </div>
+
+    <script src="../jquery-ui/external/jquery/jquery.js"></script>
+    <script src="../jquery-ui/jquery-ui.min.js"></script>
+    <script src="../scripts/bg-anim.js"></script>
+    <script src="../scripts/settings.js"></script>
+</body>
+
+</html>

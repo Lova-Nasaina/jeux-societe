@@ -1,0 +1,52 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pacman</title>
+		<link rel="stylesheet" href="./asset/css/all.min.css">
+		<link rel="stylesheet" href="./asset/css/fontawesome.min.css">
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body style="margin: 0; background-color: black">
+		<canvas id="canvas" width="500" height="540"></canvas>
+		<div style="display: none">
+			<img id="animation" src="animations.gif" width="140" height="20" />
+			<img id="ghosts" src="ghost.png" width="140" height="20" />
+		</div>
+		<div class="help">
+			<span>?</span>
+		</div>
+		<div class="commands">
+			<div class="item">
+				<span><i class="fa fa-arrow-up">, z</i></span>
+				<div class="description">Go to Up</div>
+			</div>
+			<div class="item">
+				<span><i class="fa fa-arrow-left">, q</i></span>
+				<div class="description">Go to left</div>
+			</div>
+			<div class="item">
+				<span><i class="fa fa-arrow-down">, s</i></span>
+				<div class="description">Go to Down</div>
+			</div>
+			<div class="item">
+				<span><i class="fa fa-arrow-right"></i>, d</span>
+				<div class="description">Go to right</div>
+			</div>
+			<div class="item">
+				<span>b</span>
+				<div class="description">Use Power up</div>
+			</div>
+		</div>
+		<script src="./asset/scripts/jquery-3.1.0.js"></script>
+		<script src="./asset/scripts/mazeGenerator.js"></script>
+		<script src="./asset/scripts/ghost.js"></script>
+		<script src="./asset/scripts/pacman.js"></script>
+		<script src="./asset/scripts/game.js"></script>
+	</body>
+</html>

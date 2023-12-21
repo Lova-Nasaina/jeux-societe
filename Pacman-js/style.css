@@ -1,0 +1,75 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+canvas {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.help {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: skyblue;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.help span {
+	font-size: 3rem;
+	color: #f4f4f4;
+	font-weight: bolder;
+	user-select: none;
+	cursor: pointer;
+}
+
+.commands {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: skyblue;
+	padding: 10px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-around;
+	min-height: 50vh;
+	min-width: 250px;
+}
+
+.commands .item {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+}
+
+.commands .item span {
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #f4f4f4;
+	user-select: none;
+}

@@ -1,0 +1,112 @@
+@font-face{
+    font-family: "rakoto";
+    src: url(../font/ITCEDSCR.TTF);
+    font-family: "rakotoson";
+    src :url(../font/ITCEDSCR.TTF);
+    /* src: url(../font/BELL.TTF); */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../tr1iof.jpg);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+}
+
+.container .circle h1 {
+    color: #fff;
+    font-size: 4.5em;
+    font-family: rakoto;
+}
+
+.container .card {
+    position: relative;
+    background: #fff;
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    height: 420px;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    page-break-after: 20px;
+    cursor: default;
+}
+
+.container .content .description{
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 13px;
+    text-shadow: 0px 0px 1px #ccc;
+    letter-spacing: 1px;
+}
+
+.container .content a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #000;
+    display: inline-block;
+    margin: 10px;
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a {
+    background: #e05d0b;
+}
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a {
+    background: #064df2;
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a {
+    background: maroon;
+}
+
+
+.container:hover .card {
+    filter: blur(10px);
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    filter: blur(0px);
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.5s;
+}

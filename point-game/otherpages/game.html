@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeu de points</title>
+  <link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="../styles/main-style.css" />
+  <link rel="stylesheet" href="../styles/background.css">
+</head>
+
+<body>
+
+  <div id="losange-container"></div>
+  <div class="game-container">
+    <div class="score-container">
+      <div id="scorePlayer1" class="score"></div>
+      <div id="timer" class="score"></div>
+      <div id="scorePlayer2" class="score"></div>
+    </div>
+
+    <div id="menu">
+      <button id="quitter-button">Quitter</button>
+      <button id="finish-button">Terminer</button>
+      <button id="pauseResumeButton">Pause</button>
+    </div>
+
+    <div class="canvas-wrapper">
+      <div class="canvas-container">
+        <canvas id="gridCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="zoom-slider">
+      <input type="range" class="zoom-slider" id="zoomSlider" />
+    </div>
+
+    <div id="currentTurn" class="current-turn"></div>
+  </div>
+
+  <script src="../jquery-ui/external/jquery/jquery.js"></script>
+  <script src="../jquery-ui/jquery-ui.min.js"></script>
+  <script src="../scripts/bg-anim.js"></script>
+  <script src="../scripts/main-game.js"></script>
+
+</body>
+
+</html>
